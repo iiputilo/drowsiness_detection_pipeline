@@ -1,0 +1,13 @@
+video_file,pipeline,ground_truth,alarm_raised,first_alarm_time_seconds,first_alarm_time_seconds_raw,min_drowsy_duration_seconds,alarm_count,mean_inference_ms,num_windows,total_samples,alarm_rate
+datasets\uta_rldd\31\0.mp4,yolo,alert,False,,541.346138676853,2.0,0,201.46528218308163,1,348,0.0028735632183908046
+datasets\uta_rldd\31\0.mp4,mediapipe,alert,False,,,2.0,0,20.622916659474072,0,348,0.0
+datasets\uta_rldd\31\10.mp4,yolo,drowsy,True,80.41793148092296,80.41793148092296,2.0,5,191.5870321223117,251,330,0.7606060606060606
+datasets\uta_rldd\31\10.mp4,mediapipe,drowsy,True,103.95488703631504,76.49510555502428,2.0,6,20.650299998338927,247,330,0.7484848484848485
+datasets\uta_rldd\33\0.mp4,yolo,alert,False,,,2.0,0,196.40632948475115,0,295,0.0
+datasets\uta_rldd\33\0.mp4,mediapipe,alert,False,,,2.0,0,25.175650857420543,0,295,0.0
+datasets\uta_rldd\33\10.mp4,yolo,drowsy,False,,,2.0,0,203.85348807301438,0,285,0.0
+datasets\uta_rldd\33\10.mp4,mediapipe,drowsy,True,11.811277115937717,11.811277115937717,2.0,12,24.4754463197304,72,285,0.25263157894736843
+datasets\uta_rldd\35\0.mp4,yolo,alert,False,,,2.0,0,188.0545841278656,0,315,0.0
+datasets\uta_rldd\35\0.mp4,mediapipe,alert,True,510.731591514347,510.731591514347,2.0,2,22.722775874186365,34,315,0.10793650793650794
+datasets\uta_rldd\35\10.mp4,yolo,drowsy,True,432.989818943664,432.989818943664,2.0,6,203.9892171749283,89,338,0.26331360946745563
+datasets\uta_rldd\35\10.mp4,mediapipe,drowsy,True,94.47050595134486,43.2989818943664,2.0,5,23.027737280519226,186,338,0.5502958579881657

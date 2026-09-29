@@ -1,0 +1,51 @@
+paths:
+  uta_rldd_dir: datasets/uta_rldd
+  models_dir: ../01_training/models
+  face_landmarker_model: ../01_training/models/face_landmarker.task
+  results_dir: results/
+
+sampling:
+  sample_interval_seconds: 2.0
+
+window:
+  duration: 10.0        # default for both pipelines
+  drowsy_fraction: 0.8  # default for both pipelines
+  # Per-pipeline overrides — leave a pipeline out to use defaults.
+  # Tune these to equalize sensitivity across models with different speeds.
+  pipelines:
+    yolo:
+      duration: 10.0
+      drowsy_fraction: 0.8
+    mediapipe:
+      duration: 10.0
+      drowsy_fraction: 0.8
+
+mediapipe:
+  ear_threshold: 0.25
+  mar_threshold: 0.9
+  min_detection_confidence: 0.5
+  min_tracking_confidence: 0.5
+
+evaluation:
+  drowsy_label: 10
+  alert_label: 0
+  skip_label: 5
+  min_drowsy_duration_seconds: 2.0
+
+visualization:
+  figure_dpi: 150
+  figure_width: 12
+  figure_height: 7
+  save_sample_frames: true
+  num_sample_frames: 10
+
+reproducibility:
+  random_seed: 42
+
+progress:
+  enabled: true
+  per_video: true
+  per_model: true
+  bar_width: 120
+  leave_model_bar: false
+  update_every_samples: 10

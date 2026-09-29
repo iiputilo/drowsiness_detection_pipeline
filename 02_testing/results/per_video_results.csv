@@ -1,0 +1,7 @@
+video_file,ground_truth,yolo_prediction,yolo_alarm_time,yolo_inference_ms,mediapipe_prediction,mediapipe_alarm_time,mediapipe_inference_ms
+datasets\uta_rldd\31\0.mp4,alert,False,,201.46528218308163,False,,20.622916659474072
+datasets\uta_rldd\31\10.mp4,drowsy,True,80.41793148092296,191.5870321223117,True,103.95488703631504,20.650299998338927
+datasets\uta_rldd\33\0.mp4,alert,False,,196.40632948475115,False,,25.175650857420543
+datasets\uta_rldd\33\10.mp4,drowsy,False,,203.8534880730144,True,11.811277115937717,24.4754463197304
+datasets\uta_rldd\35\0.mp4,alert,False,,188.0545841278656,True,510.731591514347,22.722775874186365
+datasets\uta_rldd\35\10.mp4,drowsy,True,432.989818943664,203.9892171749283,True,94.47050595134486,23.027737280519226

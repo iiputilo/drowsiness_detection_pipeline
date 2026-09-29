@@ -1,0 +1,32 @@
+================================================================================
+PIPELINE EVALUATION METRICS SUMMARY
+================================================================================
+
+EVALUATION METHODOLOGY NOTE:
+  Ground truth labels are assigned at the video level (weak supervision).
+  Each video is labelled either 'alert' (drowsiness0) or 'drowsy' (drowsiness10).
+  Videos with label drowsiness5 (intermediate state) were excluded from evaluation.
+  Sliding window size: 10.0, alarm threshold: 0.8.
+  Video-level labelling is a known limitation of this evaluation protocol.
+
+--------------------------------------------------------------------------------
+Metric                               YOLO    MediaPipe
+--------------------------------------------------------------------------------
+True Positives                          2            3
+False Positives                         0            1
+True Negatives                          3            2
+False Negatives                         1            0
+Precision                          1.0000       0.7500
+Recall                             0.6667       1.0000
+F1 Score                           0.8000       0.8571
+Specificity                        1.0000       0.6667
+False Alarm Rate                   0.0000       0.3333
+Alarm Time Mean (s)              256.7039      70.0789
+Alarm Time Std (s)               249.3060      50.6836
+Inference Mean (ms)              197.5593      22.7791
+Inference Std (ms)                 6.6866       1.8903
+--- Continuous metrics ---
+Drowsy Alarm Rate (↑)              0.3413       0.5171
+Alert Alarm Rate  (↓)              0.0010       0.0360
+Detection Ratio   (↑)              0.3403       0.4812
+================================================================================
