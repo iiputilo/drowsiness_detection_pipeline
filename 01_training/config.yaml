@@ -1,0 +1,27 @@
+paths:
+  dataset_states: datasets/driver-no-yawn
+  dataset_face: datasets/widerface
+  dataset_eyes: datasets/eyes_yolo
+  dataset_eyes_widerface: datasets/eyes_widerface
+  dataset_mouth: datasets/mouth_dataset
+  models_output_dir: models/
+  results_output_dir: results/
+
+training:
+  epochs_states: 30
+  epochs_face: 20
+  epochs_eyes: 10
+  epochs_mouth: 20
+  imgsz: 640
+  batch: 16
+  patience: 10
+  device: null
+  seed: 42
+
+augmentation:
+  enabled: true
+  num_augmented_copies: 2
+  brightness_limit: 0.3
+  contrast_limit: 0.3
+  blur_limit: 3
+  horizontal_flip_probability: 0.5
