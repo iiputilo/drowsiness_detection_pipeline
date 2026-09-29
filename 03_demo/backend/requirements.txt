@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+websockets
+opencv-python
+mediapipe>=0.10.0
+ultralytics>=8.4.0
+numpy
+python-multipart
+pyyaml

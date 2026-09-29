@@ -1,0 +1,30 @@
+paths:
+  models_dir: ../../01_training/models
+  face_landmarker_model: ../../01_training/models/face_landmarker.task
+  temp_video_dir: temp_videos/
+
+server:
+  host: 0.0.0.0
+  port: 8000
+
+pipeline:
+  window_duration: 2.0        # default for both pipelines
+  drowsy_fraction: 0.8        # default for both pipelines
+  ear_threshold: 0.2
+  mar_threshold: 0.9
+  gaze_threshold: 0.20
+  gaze_window_duration: 2.0
+  gaze_fraction: 0.8
+  # Per-pipeline overrides — omit a pipeline to use defaults above.
+  # Tune to equalize sensitivity across models with different speeds.
+  pipelines:
+    yolo:
+      window_duration: 2.0
+      drowsy_fraction: 0.8
+    mediapipe:
+      window_duration: 2.0
+      drowsy_fraction: 0.8
+
+stream:
+  jpeg_quality: 85
+  max_frame_width: 960
